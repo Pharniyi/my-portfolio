@@ -20,3 +20,7 @@ body {
   background: #ff2b87;
   color: #07050a;
 }
+
+section {
+  scroll-margin-top: 80px;
+}
