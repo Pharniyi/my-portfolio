@@ -4,9 +4,9 @@ import Navbar from "./components/Navbar";
 import About from "./pages/About";
 import AiIot from "./pages/AiIot";
 import Contact from "./pages/Contact";
-import Experience from "./pages/Experience";
 import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
+import Services from "./pages/Services";
 
 function App() {
 
@@ -18,9 +18,9 @@ function App() {
         <Hero />
         <About />
         <Skills />
-        <Projects />
+        <Projects />  
         <AiIot />
-        <Experience />
+        <Services />
         <Contact />
       </main>
       <Footer />

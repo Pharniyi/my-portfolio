@@ -83,7 +83,7 @@ const About = () => {
             <div className="relative rounded-4xl border border-[#9B5CFF]/35 bg-white/2 p-2">
               <div className="overflow-hidden rounded-[1.7rem]">
                 <img
-                  src="/images/profile.jpg"
+                  src="/images/about/about.png"
                   alt="Timilehin Faniyi"
                   className="aspect-4/5 w-full object-cover object-center"
                 />

@@ -1,10 +1,13 @@
 import { motion } from "framer-motion";
-import {ArrowDownRight,Mail,} from "lucide-react";
+import { ArrowDownRight, Mail } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-screen overflow-hidden bg-[#07050A] text-white">
+    <section
+      id="home"
+      className="relative min-h-screen overflow-hidden bg-[#07050A] text-white"
+    >
       {/* Background glow */}
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute -left-40 top-20 h-105 w-105 rounded-full bg-[#ff2b87]/10 blur-[140px]" />
@@ -20,7 +23,6 @@ const Hero = () => {
 
       <div className="relative z-10 mx-auto flex min-h-screen max-w-350 items-center px-6 pb-16 pt-28 lg:px-10">
         <div className="grid w-full items-center gap-16 lg:grid-cols-[1.05fr_0.95fr]">
-          
           {/* LEFT */}
           <motion.div
             initial={{ opacity: 0, y: 35 }}
@@ -45,19 +47,17 @@ const Hero = () => {
 
             {/* Role */}
             <div className="mt-8 flex items-center gap-4">
-
               <p className="text-lg font-semibold text-white/80 sm:text-xl md:text-2xl">
-                Software Developer{" "}
-                <span className="text-[#ff2b87]">&</span>{" "}
+                Software Developer <span className="text-[#ff2b87]">&</span>{" "}
                 Computer Engineer
               </p>
             </div>
 
             {/* Description */}
             <p className="mt-7 max-w-2xl text-base leading-8 text-white/55 sm:text-lg">
-              I build modern web applications, intelligent systems and
-              practical digital solutions with a focus on clean interfaces,
-              meaningful functionality and real-world impact.
+              I build modern web applications, intelligent systems and practical
+              digital solutions with a focus on clean interfaces, meaningful
+              functionality and real-world impact.
             </p>
 
             {/* CTA */}
@@ -74,10 +74,10 @@ const Hero = () => {
               </a>
 
               <a
-                href="#contact"
+                href="https://drive.google.com/file/d/10HL-g4zzI8UL59dtZnPs5ovJm33a7EmR/view?usp=drive_link"
                 className="inline-flex items-center gap-3 rounded-xl border border-white/10 bg-white/3 px-6 py-4 font-semibold text-white transition-all duration-300 hover:border-[#ff2b87]/50 hover:bg-[#ff2b87]/5"
               >
-                Contact Me
+                Download CV
               </a>
             </div>
 
@@ -88,7 +88,7 @@ const Hero = () => {
               </span>
 
               <a
-                href="#"
+                href="https://github.com/Pharniyi"
                 aria-label="GitHub"
                 className="text-white/55 transition hover:text-[#ff2b87]"
               >
@@ -96,16 +96,15 @@ const Hero = () => {
               </a>
 
               <a
-                href="#"
+                href="https://linkedin.com/in/timilehin-faniyi"
                 aria-label="LinkedIn"
                 className="text-white/55 transition hover:text-[#ff2b87]"
               >
                 <FaLinkedin size={20} />
-
               </a>
 
               <a
-                href="#"
+                href="mailto:faniyitimi@gmail.com"
                 aria-label="Email"
                 className="text-white/55 transition hover:text-[#ff2b87]"
               >
@@ -136,13 +135,14 @@ const Hero = () => {
                 {/* Image overlay */}
                 <div className="absolute inset-0 bg-linear-to-t from-[#07050A]/55 via-transparent to-transparent" />
 
-                {/* FT badge */}
-                <div className="absolute bottom-5 left-5 flex h-16 w-16 items-center justify-center rounded-2xl border border-[#ff2b87]/40 bg-black/60 shadow-[0_0_30px_rgba(255,43,135,0.2)] backdrop-blur-md">
+                {/* FT badge 
+                <div className="absolute -bottom-2 -left-2 flex h-16 w-16 items-center justify-center rounded-2xl border border-[#ff2b87]/40 bg-black/60 shadow-[0_0_30px_rgba(255,43,135,0.2)] backdrop-blur-md">
                   <span className="text-xl font-black tracking-[-0.08em]">
                     <span className="text-white">F</span>
                     <span className="text-[#ff2b87]">T</span>
                   </span>
                 </div>
+                */}
               </div>
             </div>
 
@@ -153,6 +153,7 @@ const Hero = () => {
                 <span className="text-[#9b5cff]">T</span>
               </span>
             </div>
+            
           </motion.div>
         </div>
       </div>
