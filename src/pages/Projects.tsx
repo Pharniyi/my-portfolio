@@ -75,7 +75,7 @@ const projects = [
       "TypeScript",
       "UI/UX",
     ],
-    image: "/images/projects/queueease.png",
+    image: "/images/projects/queue-ease.png",
     featured: false,
   },
   {
