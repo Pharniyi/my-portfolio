@@ -2,7 +2,7 @@ import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import About from "./pages/About";
-import AiIot from "./pages/AiIot";
+import Experience from "./pages/Experience";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
@@ -19,7 +19,7 @@ function App() {
         <About />
         <Skills />
         <Projects />  
-        <AiIot />
+        <Experience />
         <Services />
         <Contact />
       </main>

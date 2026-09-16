@@ -74,7 +74,7 @@ const Hero = () => {
               </a>
 
               <a
-                href="https://drive.google.com/file/d/10HL-g4zzI8UL59dtZnPs5ovJm33a7EmR/view?usp=drive_link"
+                href="/images/Faniyi_Timilehin_CV.pdf"
                 className="inline-flex items-center gap-3 rounded-xl border border-white/10 bg-white/3 px-6 py-4 font-semibold text-white transition-all duration-300 hover:border-[#ff2b87]/50 hover:bg-[#ff2b87]/5"
               >
                 Download CV

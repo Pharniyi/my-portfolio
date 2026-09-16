@@ -13,7 +13,7 @@ const About = () => {
 
       <div className="pointer-events-none absolute left-1/2 top-0 h-62.5 w-125 -translate-x-1/2 rounded-full bg-[#9B5CFF]/10 blur-[130px]" />
 
-      <div className="relative z-10 mx-auto max-w-350 px-6 pb-20 pt-28 lg:px-10">
+      <div className="relative z-10 mx-auto max-w-350 px-6 py-18 lg:px-10">
         {/* Section heading */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}

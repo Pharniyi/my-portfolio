@@ -101,7 +101,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="relative overflow-hidden bg-[#07050A] text-white md:py-20"
+      className="relative overflow-hidden bg-[#07050A] text-white md:py-5"
     >
       {/* Background glows */}
       <div className="pointer-events-none absolute left-[-200px] top-[15%] h-[550px] w-[550px] rounded-full bg-[#ff2b87]/[0.08] blur-[160px]" />
@@ -247,15 +247,6 @@ const Projects = () => {
           className="mt-14 flex items-center gap-5"
         >
 
-          <div className="flex items-center gap-3">
-            <span className="h-3 w-3 rounded-full bg-white/10" />
-            <span className="h-3 w-3 rounded-full bg-white/10" />
-            <span className="h-3 w-3 rounded-full bg-white/10" />
-            <span className="h-3 w-3 rounded-full bg-[#ff2b87] shadow-[0_0_15px_rgba(255,43,135,0.55)]" />
-            <span className="h-3 w-3 rounded-full bg-white/10" />
-            <span className="h-3 w-3 rounded-full bg-white/10" />
-            <span className="h-3 w-3 rounded-full bg-white/10" />
-          </div>
         </motion.div>
       </div>
     </section>
