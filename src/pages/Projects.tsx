@@ -36,6 +36,20 @@ const projects = [
   },
   {
     number: "03",
+    title: "3Seven Fashion",
+    subtitle: "Fashion Website",
+    description:
+      "A responsive fashion-focused web experience built to showcase products through a modern interface.",
+    tags: [
+      "Html",
+      "JavaScript",
+      "CSS",
+    ],
+    image: "/images/projects/3seven.png",
+    featured: false,
+  },
+  {
+    number: "04",
     title: "Quick Chat",
     subtitle: "MERN Chat Application",
     description:
@@ -50,7 +64,7 @@ const projects = [
     featured: false,
   },
   {
-    number: "04",
+    number: "05",
     title: "OmniChat",
     subtitle: "AI-Assisted Business Application",
     description:
@@ -62,34 +76,6 @@ const projects = [
       "AI",
     ],
     image: "/images/projects/omni-chat.png",
-    featured: false,
-  },
-  {
-    number: "05",
-    title: "QueueEase",
-    subtitle: "Queue Management Platform",
-    description:
-      "A digital queue management concept focused on simplifying customer waiting experiences and improving service flow.",
-    tags: [
-      "React",
-      "TypeScript",
-      "UI/UX",
-    ],
-    image: "/images/projects/queue-ease.png",
-    featured: false,
-  },
-  {
-    number: "06",
-    title: "3Seven Fashion",
-    subtitle: "Fashion Website",
-    description:
-      "A responsive fashion-focused web experience built to showcase products through a modern interface.",
-    tags: [
-      "Html",
-      "JavaScript",
-      "CSS",
-    ],
-    image: "/images/projects/3seven.png",
     featured: false,
   },
 ];

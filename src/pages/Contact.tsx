@@ -12,7 +12,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="relative overflow-hidden bg-[#07050A] py-28 text-white md:py-36"
+      className="relative overflow-hidden bg-[#07050A] py-28 text-white md:py-10"
     >
       {/* Background glow */}
       <div className="pointer-events-none absolute left-[-180px] top-[25%] h-[500px] w-[500px] rounded-full bg-[#FF2B87]/10 blur-[160px]" />
@@ -34,11 +34,11 @@ const Contact = () => {
 
           <div className="text-center">
             <p className="mb-4 text-xs font-semibold uppercase tracking-[0.25em] text-[#FF2B87]">
-              08 / Contact
+              Contact
             </p>
 
             <h2 className="text-5xl font-black leading-[0.95] tracking-[-0.05em] sm:text-6xl lg:text-7xl">
-              Let&apos;s Build Something
+              Let's Build Something
               <span className="block text-white/40">
                 Together.
               </span>
@@ -46,7 +46,7 @@ const Contact = () => {
 
             <p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-white/45 sm:text-lg">
               Have a project, an idea, or an opportunity? Tell me about it and
-              let&apos;s create something meaningful.
+              let's create something meaningful.
             </p>
           </div>
         </motion.div>
@@ -72,13 +72,13 @@ const Contact = () => {
               </p>
 
               <h3 className="mt-4 text-3xl font-bold tracking-[-0.03em] sm:text-4xl">
-                Let&apos;s talk about your next project.
+                Let's talk about your next project.
               </h3>
 
               <p className="mt-5 max-w-md text-sm leading-7 text-white/40 sm:text-base">
                 Whether you need a website, web application, e-commerce
                 solution, backend integration, or help improving an existing
-                project, I&apos;d be happy to hear from you.
+                project, I'd be happy to hear from you.
               </p>
 
               {/* Contact details */}
@@ -86,15 +86,15 @@ const Contact = () => {
                 <ContactInfo
                   icon={<Mail size={20} />}
                   label="Email"
-                  value="your@email.com"
-                  href="mailto:your@email.com"
+                  value="faniyitimi@gmail.com"
+                  href="mailto:faniyitimi@gmail.com"
                 />
 
                 <ContactInfo
                   icon={<Phone size={20} />}
                   label="Phone"
-                  value="+234 XXX XXX XXXX"
-                  href="tel:+2340000000000"
+                  value="+234 80 208 97107"
+                  href="tel:+234 80 208 97107"
                 />
 
                 <ContactInfo
@@ -112,13 +112,13 @@ const Contact = () => {
 
                 <div className="flex gap-3">
                   <SocialLink
-                    href="#"
+                    href="https://github.com/Pharniyi"
                     label="GitHub"
                     icon={<FaGithub size={18} />}
                   />
 
                   <SocialLink
-                    href="#"
+                    href="https://linkedin.com/in/timilehin-faniyi"
                     label="LinkedIn"
                     icon={<FaLinkedin size={18} />}
                   />
@@ -222,23 +222,6 @@ const Contact = () => {
           </p>
         </motion.div>
 
-        {/* Section progress */}
-        <div className="mt-10 flex items-center gap-5">
-          <span className="text-lg font-medium tracking-[0.06em] text-white/75">
-            08 / 08
-          </span>
-
-          <div className="flex items-center gap-3">
-            <span className="h-3 w-3 rounded-full bg-white/10" />
-            <span className="h-3 w-3 rounded-full bg-white/10" />
-            <span className="h-3 w-3 rounded-full bg-white/10" />
-            <span className="h-3 w-3 rounded-full bg-white/10" />
-            <span className="h-3 w-3 rounded-full bg-white/10" />
-            <span className="h-3 w-3 rounded-full bg-white/10" />
-            <span className="h-3 w-3 rounded-full bg-white/10" />
-            <span className="h-3 w-3 rounded-full bg-[#FF2B87] shadow-[0_0_15px_rgba(255,43,135,0.65)]" />
-          </div>
-        </div>
       </div>
     </section>
   );
