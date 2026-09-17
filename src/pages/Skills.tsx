@@ -44,10 +44,8 @@ const Skills = () => {
             skills={[
               "JavaScript",
               "TypeScript",
-              "PHP",
               "HTML5",
               "CSS3",
-              "SQL",
 
             ]}
             direction="left"
@@ -58,11 +56,9 @@ const Skills = () => {
             icon={<BrainCircuit size={30} />}
             skills={[
               "Node.js",
-              "PHP / MySQL",
               "REST APIs",
-              "TensorFlow",
-              "Machine Learning",
-              "Computer Vision",
+              "Express.js",
+              "MongoDB",
               "Prompt Engineering",
               "AI Workflows / Agents",
             ]}
@@ -76,7 +72,7 @@ const Skills = () => {
               "React.js",
               "Next.js",
               "Tailwind CSS",
-              "Redux",
+              "Bootstrap",
               "Git / GitHub",
               "VS Code",
               "Vercel",
@@ -95,8 +91,6 @@ const Skills = () => {
               "ESP32",
               "IoT",
               "Networking",
-              "Automation",
-              "System Design",
             ]}
             direction="right"
           />

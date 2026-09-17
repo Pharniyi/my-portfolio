@@ -11,12 +11,16 @@ const projects = [
       "An intelligent traffic monitoring system that combines sensors, cameras and a web dashboard to monitor traffic flow and detect speed violations.",
     tags: [
       "React",
+      "Next.js",
       "TypeScript",
       "ESP32",
       "MongoDB",
-      "IoT",
+      "IoT"
     ],
     image: "/images/projects/smart-traffic.png",
+    liveUrl: "https://smartrafficmanagement.vercel.app/",
+    githubUrl:
+      "https://github.com/Pharniyi/smart_traffic_management_and_speed_violation_detection_system",
     featured: true,
   },
   {
@@ -32,6 +36,8 @@ const projects = [
       "MongoDB",
     ],
     image: "/images/projects/hcv-fashion.png",
+    liveUrl: "https://hcv-fashion.onrender.com/",
+    githubUrl: "https://github.com/Pharniyi/HCV-Fashion",
     featured: false,
   },
   {
@@ -46,6 +52,8 @@ const projects = [
       "CSS",
     ],
     image: "/images/projects/3seven.png",
+    liveUrl: "https://3-seven-two.vercel.app/",
+    githubUrl: "https://github.com/Pharniyi/3Seven",
     featured: false,
   },
   {
@@ -58,9 +66,11 @@ const projects = [
       "React",
       "Node.js",
       "MongoDB",
-      "JWT",
+      "Socket.io"
     ],
     image: "/images/projects/quick-chat.png",
+    liveUrl: "https://quickchat-1-z2t2.onrender.com",
+    githubUrl: "https://github.com/Pharniyi/Quick-Chat",
     featured: false,
   },
   {
@@ -70,14 +80,16 @@ const projects = [
     description:
       "An interactive business assistant designed to support workflows across recruitment, employee management, accounting and invoicing.",
     tags: [
-      "Next.js",
+      "React",
       "TypeScript",
       "Tailwind CSS",
-      "AI",
+      "OpenAI API"
     ],
     image: "/images/projects/omni-chat.png",
+    liveUrl: "https://omni-chat-fawn.vercel.app/",
+    githubUrl: "https://github.com/Pharniyi/Omni_chat",
     featured: false,
-  },
+  }
 ];
 
 const Projects = () => {
@@ -171,7 +183,9 @@ const Projects = () => {
               {/* Buttons */}
               <div className="mt-10 flex flex-wrap gap-3">
                 <a
-                  href="https://smartrafficmanagement.vercel.app/"
+                  href={featuredProject.liveUrl}
+                  target="_blank"
+                  rel="noreferrer"
                   className="group/btn inline-flex items-center gap-2 rounded-xl bg-[#ff2b87] px-5 py-3 text-sm font-bold text-[#07050A] transition hover:-translate-y-0.5 hover:shadow-[0_0_28px_rgba(255,43,135,0.35)]"
                 >
                   View Project
@@ -183,7 +197,9 @@ const Projects = () => {
                 </a>
 
                 <a
-                  href="https://github.com/Pharniyi/smart_traffic_management_and_speed_violation_detection_system"
+                  href={featuredProject.githubUrl}
+                  target="_blank"
+                  rel="noreferrer"
                   className="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/[0.02] px-5 py-3 text-sm font-semibold text-white transition hover:border-[#ff2b87]/40 hover:bg-[#ff2b87]/[0.05]"
                 >
                   GitHub
@@ -303,7 +319,9 @@ const ProjectCard = ({
         {/* Links */}
         <div className="mt-7 flex items-center justify-between border-t border-white/[0.07] pt-5">
           <a
-            href="#"
+            href={project.liveUrl}
+            target="_blank"
+            rel="noreferrer"
             className="inline-flex items-center gap-2 text-sm font-semibold text-white/65 transition hover:text-[#ff2b87]"
           >
             View Project
@@ -311,7 +329,9 @@ const ProjectCard = ({
           </a>
 
           <a
-            href=""
+            href={project.githubUrl}
+            target="_blank"
+            rel="noreferrer"
             aria-label={`View ${project.title} on GitHub`}
             className="text-white/30 transition hover:text-[#ff2b87]"
           >

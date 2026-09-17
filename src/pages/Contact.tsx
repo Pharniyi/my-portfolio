@@ -9,6 +9,9 @@ import {
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Contact = () => {
+  const isSubmitted =
+    typeof window !== "undefined" && window.location.search.includes("submitted=1");
+
   return (
     <section
       id="contact"
@@ -128,72 +131,116 @@ const Contact = () => {
           </motion.div>
 
           {/* Form */}
-          <motion.div
-            initial={{ opacity: 0, x: 35 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.8, delay: 0.1 }}
-            className="relative overflow-hidden rounded-[2rem] border border-white/[0.08] bg-white/[0.025] p-7 backdrop-blur-xl sm:p-9 lg:p-10"
-          >
-            {/* Top glow */}
-            <div className="pointer-events-none absolute right-[-100px] top-[-100px] h-[250px] w-[250px] rounded-full bg-[#FF2B87]/10 blur-[90px]" />
-
-            <form
-              className="relative z-10"
-              onSubmit={(e) => e.preventDefault()}
+          {!isSubmitted ? (
+            <motion.div
+              initial={{ opacity: 0, x: 35 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.8, delay: 0.1 }}
+              className="relative overflow-hidden rounded-[2rem] border border-white/[0.08] bg-white/[0.025] p-7 backdrop-blur-xl sm:p-9 lg:p-10"
             >
-              <div className="grid gap-6 sm:grid-cols-2">
-                <InputField
-                  label="Your Name"
-                  type="text"
-                  placeholder="Enter your name"
-                />
+              {/* Top glow */}
+              <div className="pointer-events-none absolute right-[-100px] top-[-100px] h-[250px] w-[250px] rounded-full bg-[#FF2B87]/10 blur-[90px]" />
 
-                <InputField
-                  label="Your Email"
-                  type="email"
-                  placeholder="Enter your email"
-                />
-              </div>
-
-              <div className="mt-6">
-                <InputField
-                  label="Subject"
-                  type="text"
-                  placeholder="What would you like to discuss?"
-                />
-              </div>
-
-              <div className="mt-6">
-                <label
-                  htmlFor="message"
-                  className="mb-2 block text-xs font-semibold uppercase tracking-[0.14em] text-white/40"
-                >
-                  Message
-                </label>
-
-                <textarea
-                  id="message"
-                  name="message"
-                  rows={7}
-                  placeholder="Tell me about your project..."
-                  className="w-full resize-none rounded-xl border border-white/[0.08] bg-black/20 px-4 py-4 text-sm text-white outline-none transition placeholder:text-white/20 focus:border-[#FF2B87]/50 focus:bg-[#FF2B87]/[0.02] focus:shadow-[0_0_25px_rgba(255,43,135,0.06)]"
-                />
-              </div>
-
-              <button
-                type="submit"
-                className="group mt-7 inline-flex w-full items-center justify-center gap-3 rounded-xl bg-[#FF2B87] px-6 py-4 text-sm font-bold text-black transition duration-300 hover:-translate-y-1 hover:shadow-[0_0_35px_rgba(255,43,135,0.3)]"
+              <form
+                className="relative z-10"
+                action="https://formsubmit.co/faniyitimi@gmail.com"
+                method="POST"
               >
-                Send Message
-
-                <ArrowUpRight
-                  size={18}
-                  className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_subject" value="Portfolio inquiry" />
+                <input
+                  type="hidden"
+                  name="_next"
+                  value={
+                    typeof window !== "undefined"
+                      ? `${window.location.origin}${window.location.pathname}?submitted=1`
+                      : ""
+                  }
                 />
-              </button>
-            </form>
-          </motion.div>
+
+                <div className="grid gap-6 sm:grid-cols-2">
+                  <InputField
+                    label="Your Name"
+                    type="text"
+                    name="name"
+                    placeholder="Enter your name"
+                    required
+                  />
+
+                  <InputField
+                    label="Your Email"
+                    type="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </div>
+
+                <div className="mt-6">
+                  <InputField
+                    label="Subject"
+                    type="text"
+                    name="subject"
+                    placeholder="What would you like to discuss?"
+                    required
+                  />
+                </div>
+
+                <div className="mt-6">
+                  <label
+                    htmlFor="message"
+                    className="mb-2 block text-xs font-semibold uppercase tracking-[0.14em] text-white/40"
+                  >
+                    Message
+                  </label>
+
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows={7}
+                    required
+                    placeholder="Tell me about your project..."
+                    className="w-full resize-none rounded-xl border border-white/[0.08] bg-black/20 px-4 py-4 text-sm text-white outline-none transition placeholder:text-white/20 focus:border-[#FF2B87]/50 focus:bg-[#FF2B87]/[0.02] focus:shadow-[0_0_25px_rgba(255,43,135,0.06)]"
+                  />
+                </div>
+
+                <button
+                  type="submit"
+                  className="group mt-7 inline-flex w-full items-center justify-center gap-3 rounded-xl bg-[#FF2B87] px-6 py-4 text-sm font-bold text-black transition duration-300 hover:-translate-y-1 hover:shadow-[0_0_35px_rgba(255,43,135,0.3)]"
+                >
+                  Send Message
+
+                  <ArrowUpRight
+                    size={18}
+                    className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
+                  />
+                </button>
+              </form>
+            </motion.div>
+          ) : (
+            <motion.div
+              initial={{ opacity: 0, scale: 0.96 }}
+              animate={{ opacity: 1, scale: 1 }}
+              className="relative flex min-h-[500px] items-center justify-center overflow-hidden rounded-[2rem] border border-[#FF2B87]/30 bg-white/[0.025] p-7 text-center backdrop-blur-xl sm:p-9 lg:p-10"
+            >
+              <div className="pointer-events-none absolute right-[-100px] top-[-100px] h-[250px] w-[250px] rounded-full bg-[#FF2B87]/10 blur-[90px]" />
+
+              <div className="relative z-10 max-w-md">
+                <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-[#FF2B87]/15 text-2xl text-[#FF2B87]">
+                  ✓
+                </div>
+
+                <h3 className="text-3xl font-black tracking-[-0.04em]">
+                  Message sent
+                </h3>
+
+                <p className="mt-4 text-base leading-7 text-white/60">
+                  Submitted successfully. Your message has been sent directly to your email.
+                </p>
+              </div>
+            </motion.div>
+          )}
         </div>
 
         {/* Bottom CTA */}
@@ -294,13 +341,17 @@ const SocialLink = ({
 interface InputFieldProps {
   label: string;
   type: string;
+  name: string;
   placeholder: string;
+  required?: boolean;
 }
 
 const InputField = ({
   label,
   type,
+  name,
   placeholder,
+  required = false,
 }: InputFieldProps) => {
   return (
     <div>
@@ -310,7 +361,9 @@ const InputField = ({
 
       <input
         type={type}
+        name={name}
         placeholder={placeholder}
+        required={required}
         className="w-full rounded-xl border border-white/[0.08] bg-black/20 px-4 py-4 text-sm text-white outline-none transition placeholder:text-white/20 focus:border-[#FF2B87]/50 focus:bg-[#FF2B87]/[0.02] focus:shadow-[0_0_25px_rgba(255,43,135,0.06)]"
       />
     </div>

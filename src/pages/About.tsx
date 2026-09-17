@@ -112,12 +112,12 @@ const About = () => {
           {/* Stats */}
           <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
             <StatCard
-              value="5+"
+              value="3+"
               label="Years Experience"
             />
 
             <StatCard
-              value="50+"
+              value="20+"
               label="Projects Completed"
             />
 

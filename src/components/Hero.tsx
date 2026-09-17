@@ -33,7 +33,8 @@ const Hero = () => {
             <div className="mb-7 inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/3 px-4 py-2 backdrop-blur-md">
               <span className="h-2 w-2 animate-pulse rounded-full bg-[#ff2b87]" />
               <span className="text-xs font-medium uppercase tracking-[0.2em] text-white/60">
-                Available for opportunities
+               Software Developer <span className="text-[#ff2b87]">&</span>{" "}
+                Computer Engineer
               </span>
             </div>
 
@@ -74,7 +75,7 @@ const Hero = () => {
               </a>
 
               <a
-                href="/images/Faniyi_Timilehin_CV.pdf"
+                href="/images/FANIYI_Timilehin_Esther_CV 2026.pdf"
                 className="inline-flex items-center gap-3 rounded-xl border border-white/10 bg-white/3 px-6 py-4 font-semibold text-white transition-all duration-300 hover:border-[#ff2b87]/50 hover:bg-[#ff2b87]/5"
               >
                 Download CV
