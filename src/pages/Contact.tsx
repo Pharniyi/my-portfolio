@@ -364,7 +364,7 @@ const InputField = ({
         name={name}
         placeholder={placeholder}
         required={required}
-        className="w-full rounded-xl border border-white/8 bg-black/20 px-4 py-4 text-sm text-white outline-none transition placeholder:text-white/20 focus:border-[#FF2B87]/50 focus:bg-[#FF2B87]/[0.02] focus:shadow-[0_0_25px_rgba(255,43,135,0.06)]"
+        className="w-full rounded-xl border border-white/8 bg-black/20 px-4 py-4 text-sm text-white outline-none transition placeholder:text-white/20 focus:border-[#FF2B87]/50 focus:bg-[#FF2B87]/2 focus:shadow-[0_0_25px_rgba(255,43,135,0.06)]"
       />
     </div>
   );
