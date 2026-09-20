@@ -18,13 +18,13 @@ const Contact = () => {
       className="relative overflow-hidden bg-[#07050A] py-28 text-white md:py-10"
     >
       {/* Background glow */}
-      <div className="pointer-events-none absolute left-[-180px] top-[25%] h-[500px] w-[500px] rounded-full bg-[#FF2B87]/10 blur-[160px]" />
+      <div className="pointer-events-none absolute -left-45 top-[25%] h-125 w-125 rounded-full bg-[#FF2B87]/10 blur-[160px]" />
 
-      <div className="pointer-events-none absolute right-[-160px] top-[15%] h-[500px] w-[500px] rounded-full bg-[#9B5CFF]/10 blur-[160px]" />
+      <div className="pointer-events-none absolute -right-40 top-[15%] h-125 w-125 rounded-full bg-[#9B5CFF]/10 blur-[160px]" />
 
-      <div className="pointer-events-none absolute bottom-[-200px] left-1/2 h-[450px] w-[700px] -translate-x-1/2 rounded-full bg-[#FF2B87]/[0.05] blur-[170px]" />
+      <div className="pointer-events-none absolute -bottom-50 left-1/2 h-112.5 w-175 -translate-x-1/2 rounded-full bg-[#FF2B87]/5 blur-[170px]" />
 
-      <div className="relative z-10 mx-auto max-w-[1400px] px-6 lg:px-10">
+      <div className="relative z-10 mx-auto max-w-350 px-6 lg:px-10">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -33,14 +33,14 @@ const Contact = () => {
           transition={{ duration: 0.7 }}
           className="mb-16"
         >
-          <div className="mx-auto mb-7 h-[3px] w-20 rounded-full bg-[#FF2B87] shadow-[0_0_18px_rgba(255,43,135,0.65)]" />
+          <div className="mx-auto mb-7 h-0.75 w-20 rounded-full bg-[#FF2B87] shadow-[0_0_18px_rgba(255,43,135,0.65)]" />
 
           <div className="text-center">
             <p className="mb-4 text-xs font-semibold uppercase tracking-[0.25em] text-[#FF2B87]">
               Contact
             </p>
 
-            <h2 className="text-5xl font-black leading-[0.95] tracking-[-0.05em] sm:text-6xl lg:text-7xl">
+            <h2 className="text-5xl font-black leading-[0.95] tracking-tighter sm:text-6xl lg:text-7xl">
               Let's Build Something
               <span className="block text-white/40">
                 Together.
@@ -62,10 +62,10 @@ const Contact = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.8 }}
-            className="relative overflow-hidden rounded-[2rem] border border-white/[0.08] bg-white/[0.025] p-7 backdrop-blur-xl sm:p-9 lg:p-10"
+            className="relative overflow-hidden rounded-4xl border border-white/8 bg-white/2.5 p-7 backdrop-blur-xl sm:p-9 lg:p-10"
           >
             {/* Decorative FT */}
-            <div className="pointer-events-none absolute -right-10 -top-10 select-none text-[150px] font-black tracking-[-0.12em] text-[#FF2B87]/[0.04]">
+            <div className="pointer-events-none absolute -right-10 -top-10 select-none text-[150px] font-black tracking-[-0.12em] text-[#FF2B87]/4">
               FT
             </div>
 
@@ -137,10 +137,10 @@ const Contact = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.8, delay: 0.1 }}
-              className="relative overflow-hidden rounded-[2rem] border border-white/[0.08] bg-white/[0.025] p-7 backdrop-blur-xl sm:p-9 lg:p-10"
+              className="relative overflow-hidden rounded-4xl border border-white/8 bg-white/2.5 p-7 backdrop-blur-xl sm:p-9 lg:p-10"
             >
               {/* Top glow */}
-              <div className="pointer-events-none absolute right-[-100px] top-[-100px] h-[250px] w-[250px] rounded-full bg-[#FF2B87]/10 blur-[90px]" />
+              <div className="pointer-events-none absolute -right-25 -top-25 h-62.5 w-62.5 rounded-full bg-[#FF2B87]/10 blur-[90px]" />
 
               <form
                 className="relative z-10"
@@ -201,7 +201,7 @@ const Contact = () => {
                     rows={7}
                     required
                     placeholder="Tell me about your project..."
-                    className="w-full resize-none rounded-xl border border-white/[0.08] bg-black/20 px-4 py-4 text-sm text-white outline-none transition placeholder:text-white/20 focus:border-[#FF2B87]/50 focus:bg-[#FF2B87]/[0.02] focus:shadow-[0_0_25px_rgba(255,43,135,0.06)]"
+                    className="w-full resize-none rounded-xl border border-white/8 bg-black/20 px-4 py-4 text-sm text-white outline-none transition placeholder:text-white/20 focus:border-[#FF2B87]/50 focus:bg-[#FF2B87]/2 focus:shadow-[0_0_25px_rgba(255,43,135,0.06)]"
                   />
                 </div>
 
@@ -222,9 +222,9 @@ const Contact = () => {
             <motion.div
               initial={{ opacity: 0, scale: 0.96 }}
               animate={{ opacity: 1, scale: 1 }}
-              className="relative flex min-h-[500px] items-center justify-center overflow-hidden rounded-[2rem] border border-[#FF2B87]/30 bg-white/[0.025] p-7 text-center backdrop-blur-xl sm:p-9 lg:p-10"
+              className="relative flex min-h-125 items-center justify-center overflow-hidden rounded-4xl border border-[#FF2B87]/30 bg-white/2.5 p-7 text-center backdrop-blur-xl sm:p-9 lg:p-10"
             >
-              <div className="pointer-events-none absolute right-[-100px] top-[-100px] h-[250px] w-[250px] rounded-full bg-[#FF2B87]/10 blur-[90px]" />
+              <div className="pointer-events-none absolute -right-25 -top-25 h-62.5 w-62.5 rounded-full bg-[#FF2B87]/10 blur-[90px]" />
 
               <div className="relative z-10 max-w-md">
                 <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-[#FF2B87]/15 text-2xl text-[#FF2B87]">
@@ -252,7 +252,7 @@ const Contact = () => {
           className="mt-16 flex flex-col items-center justify-between gap-5 border-t border-white/[0.07] pt-8 sm:flex-row"
         >
           <div className="flex items-center gap-3">
-            <span className="flex h-9 w-9 items-center justify-center rounded-lg border border-[#FF2B87]/25 bg-[#FF2B87]/[0.05]">
+            <span className="flex h-9 w-9 items-center justify-center rounded-lg border border-[#FF2B87]/25 bg-[#FF2B87]/5">
               <span className="text-sm font-black tracking-[-0.08em]">
                 <span className="text-[#FF2B87]">F</span>
                 <span className="text-[#9B5CFF]">T</span>
@@ -289,7 +289,7 @@ const ContactInfo = ({
 }: ContactInfoProps) => {
   const content = (
     <div className="group flex items-center gap-4">
-      <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-white/[0.08] bg-white/[0.025] text-[#FF2B87] transition duration-300 group-hover:border-[#FF2B87]/30 group-hover:bg-[#FF2B87]/[0.05]">
+      <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-white/8 bg-white/2.5 text-[#FF2B87] transition duration-300 group-hover:border-[#FF2B87]/30 group-hover:bg-[#FF2B87]/5">
         {icon}
       </div>
 
@@ -331,7 +331,7 @@ const SocialLink = ({
     <a
       href={href}
       aria-label={label}
-      className="flex h-11 w-11 items-center justify-center rounded-xl border border-white/[0.08] bg-white/[0.025] text-white/45 transition duration-300 hover:border-[#FF2B87]/35 hover:bg-[#FF2B87]/[0.05] hover:text-[#FF2B87]"
+      className="flex h-11 w-11 items-center justify-center rounded-xl border border-white/8 bg-white/2.5 text-white/45 transition duration-300 hover:border-[#FF2B87]/35 hover:bg-[#FF2B87]/5 hover:text-[#FF2B87]"
     >
       {icon}
     </a>
@@ -364,7 +364,7 @@ const InputField = ({
         name={name}
         placeholder={placeholder}
         required={required}
-        className="w-full rounded-xl border border-white/[0.08] bg-black/20 px-4 py-4 text-sm text-white outline-none transition placeholder:text-white/20 focus:border-[#FF2B87]/50 focus:bg-[#FF2B87]/[0.02] focus:shadow-[0_0_25px_rgba(255,43,135,0.06)]"
+        className="w-full rounded-xl border border-white/8 bg-black/20 px-4 py-4 text-sm text-white outline-none transition placeholder:text-white/20 focus:border-[#FF2B87]/50 focus:bg-[#FF2B87]/[0.02] focus:shadow-[0_0_25px_rgba(255,43,135,0.06)]"
       />
     </div>
   );
