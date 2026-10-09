@@ -236,7 +236,7 @@ const Contact = () => {
                 </h3>
 
                 <p className="mt-4 text-base leading-7 text-white/60">
-                  Submitted successfully. Your message has been sent directly to your email.
+                  Submitted successfully. Your message has been sent.
                 </p>
               </div>
             </motion.div>
